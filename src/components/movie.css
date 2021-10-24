@@ -1,0 +1,25 @@
+.movie {
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.movie_image {
+  transition: all 500ms;
+}
+
+.content {
+  display: none;
+}
+
+.movie:hover > .movie_image {
+  transform: scale(1.05);
+  filter: brightness(30%);
+}
+.movie:hover > .content {
+  height: 95%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
