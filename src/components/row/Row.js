@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import axiosInstance from "../axios";
+import axiosInstance from "../../helpers/axios";
 import ScrollContainer from "react-indiana-drag-scroll";
-import Movie from "./Movie";
+import Movie from "./../movie/Movie";
 import "./row.css";
 
 function Row({ title, fetchUrl, handleOpen }) {
