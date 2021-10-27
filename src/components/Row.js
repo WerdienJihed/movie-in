@@ -19,11 +19,12 @@ function Row({ title, fetchUrl, handleOpen }) {
 
   return (
     <div>
-      <h1>{title}</h1>
+      <h1 className="row-title">{title}</h1>
       <ScrollContainer className="scroll-container">
         <div className="movies">
           {movies.map((movie) => (
             <Movie
+              key={movie.id}
               id={movie.id}
               title={movie.title}
               poster_path={movie.poster_path}

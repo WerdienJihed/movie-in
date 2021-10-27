@@ -1,3 +1,6 @@
+.row-title {
+  color: #1976d2;
+}
 .movies {
   cursor: grab;
   display: flex;
